@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "470859002178",
+    "project_id": "kep-3711a",
+    "storage_bucket": "kep-3711a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470859002178:android:cdfc07f4d1f8ce80d898db",
+        "android_client_info": {
+          "package_name": "com.smilias.kep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470859002178-0eidas1gvslns14a9jp02cj7o6d7r70t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj_-QzvImRI704gZl-lQEe4W_8mkbEm7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470859002178-0eidas1gvslns14a9jp02cj7o6d7r70t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

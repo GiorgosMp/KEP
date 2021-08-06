@@ -1,0 +1,121 @@
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM_[Default_Changelist]/shelved.patch
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM_[Default_Changelist]/shelved.patch	(revision c7173ac35c8faac00f8a17a5bfa1eb9a6ea4ee8e)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM_[Default_Changelist]/shelved.patch	(revision c7173ac35c8faac00f8a17a5bfa1eb9a6ea4ee8e)
+@@ -1,106 +0,0 @@
+-Index: .idea/.gitignore
+-===================================================================
+---- .idea/.gitignore	(revision ae11355d99ee1af096d48137529d187e778222e9)
+-+++ .idea/.gitignore	(revision ae11355d99ee1af096d48137529d187e778222e9)
+-@@ -1,3 +0,0 @@
+--# Default ignored files
+--/shelf/
+--/workspace.xml
+-Index: .idea/gradle.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/gradle.xml	(revision ae11355d99ee1af096d48137529d187e778222e9)
+-+++ .idea/gradle.xml	(date 1623316552683)
+-@@ -7,6 +7,7 @@
+-         <option name="testRunner" value="PLATFORM" />
+-         <option name="distributionType" value="DEFAULT_WRAPPED" />
+-         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-+        <option name="gradleJvm" value="11" />
+-         <option name="modules">
+-           <set>
+-             <option value="$PROJECT_DIR$" />
+-@@ -14,7 +15,6 @@
+-           </set>
+-         </option>
+-         <option name="resolveModulePerSourceSet" value="false" />
+--        <option name="useQualifiedModuleNames" value="true" />
+-       </GradleProjectSettings>
+-     </option>
+-   </component>
+-Index: app/build.gradle
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+>    plugins {\r\n    id 'com.android.application'\r\n    id 'com.google.gms.google-services'\r\n}\r\n\r\nandroid {\r\n    compileSdkVersion 30\r\n    buildToolsVersion \"29.0.3\"\r\n\r\n    defaultConfig {\r\n        applicationId \"com.smilias.kep\"\r\n        minSdkVersion 25\r\n        targetSdkVersion 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n    buildFeatures {\r\n        viewBinding true\r\n    }\r\n\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n}\r\n\r\n\r\ndependencies {\r\n\r\n    compile 'com.itextpdf:itextg:5.5.10'\r\n    compile 'com.github.gcacace:signature-pad:1.2.1'\r\n    implementation files('libs\\\\activation.jar')\r\n    implementation files('libs\\\\mail.jar')\r\n    implementation files('libs\\\\additionnal.jar')\r\n    implementation 'com.google.code.gson:gson:2.8.5'\r\n    implementation 'com.itextpdf:io:7.0.2'\r\n    implementation 'com.itextpdf:kernel:7.0.2'\r\n    implementation 'com.itextpdf:layout:7.0.2'\r\n    implementation 'androidx.appcompat:appcompat:1.2.0'\r\n    implementation 'com.google.android.material:material:1.3.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'\r\n    implementation 'androidx.legacy:legacy-support-v4:1.0.0'\r\n    implementation 'com.google.firebase:firebase-database:20.0.0'\r\n    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'\r\n    implementation 'com.google.firebase:firebase-auth:21.0.1'\r\n    implementation files('libs\\\\activation.jar')\r\n    implementation files('libs\\\\mail.jar')\r\n    implementation files('libs\\\\additionnal.jar')\r\n    testImplementation 'junit:junit:4.+'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.2'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'\r\n    //mplement files(activation.jar)\r\n    //implement files(additionnal.jar)\r\n    //implement files(mail.jar)\r\n}
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- app/build.gradle	(revision ae11355d99ee1af096d48137529d187e778222e9)
+-+++ app/build.gradle	(date 1623316796779)
+-@@ -58,7 +58,4 @@
+-     testImplementation 'junit:junit:4.+'
+-     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+-     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+--    //mplement files(activation.jar)
+--    //implement files(additionnal.jar)
+--    //implement files(mail.jar)
+- }
+-\ No newline at end of file
+-Index: .idea/misc.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CMakeSettings\">\r\n    <configurations>\r\n      <configuration PROFILE_NAME=\"Debug\" CONFIG_NAME=\"Debug\" />\r\n    </configurations>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/misc.xml	(revision ae11355d99ee1af096d48137529d187e778222e9)
+-+++ .idea/misc.xml	(date 1623316843923)
+-@@ -5,7 +5,7 @@
+-       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+-     </configurations>
+-   </component>
+--  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+-+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
+-     <output url="file://$PROJECT_DIR$/build/classes" />
+-   </component>
+-   <component name="ProjectType">
+-Index: .idea/runConfigurations.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/runConfigurations.xml	(date 1624263392489)
+-+++ .idea/runConfigurations.xml	(date 1624263392489)
+-@@ -0,0 +1,10 @@
+-+<?xml version="1.0" encoding="UTF-8"?>
+-+<project version="4">
+-+  <component name="RunConfigurationProducerService">
+-+    <option name="ignoredProducers">
+-+      <set>
+-+        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
+-+      </set>
+-+    </option>
+-+  </component>
+-+</project>
+-\ No newline at end of file
+-Index: .idea/compiler.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <bytecodeTargetLevel target=\"1.8\" />\r\n  </component>\r\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+---- .idea/compiler.xml	(revision ae11355d99ee1af096d48137529d187e778222e9)
+-+++ .idea/compiler.xml	(date 1623316843941)
+-@@ -1,6 +1,6 @@
+- <?xml version="1.0" encoding="UTF-8"?>
+- <project version="4">
+-   <component name="CompilerConfiguration">
+--    <bytecodeTargetLevel target="1.8" />
+-+    <bytecodeTargetLevel target="11" />
+-   </component>
+- </project>
+-\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM__Default_Changelist_.xml
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM__Default_Changelist_.xml	(revision c7173ac35c8faac00f8a17a5bfa1eb9a6ea4ee8e)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM__Default_Changelist_.xml	(revision c7173ac35c8faac00f8a17a5bfa1eb9a6ea4ee8e)
+@@ -1,4 +0,0 @@
+-<changelist name="Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM_[Default_Changelist]" date="1624263543646" recycled="true" deleted="true">
+-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_21_2021_11_17_AM_[Default_Changelist]/shelved.patch" />
+-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/21/2021 11:17 AM [Default Changelist]" />
+-</changelist>
+\ No newline at end of file

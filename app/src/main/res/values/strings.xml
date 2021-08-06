@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KEP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="application_list">
+        <item>ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΟΙΚΟΓΕΝΕΙΑΚΗΣ ΚΑΤΑΣΤΑΣΗΣ</item>
+        <item>ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΓΕΝΝΗΣΗΣ</item>
+        <item>ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΕΜΒΟΛΙΑΣΜΟΥ COVID-19</item>
+        <item>ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΕΓΓΥΤΕΡΩΝ ΣΥΓΓΕΝΩΝ</item>
+        <item>ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΙΘΑΓΕΝΕΙΑΣ</item>
+        <item>ΠΙΣΤΟΠΟΙΗΤΙΚΟ ΣΥΜΦΩΝΟΥ ΣΥΜΒΙΩΣΗΣ</item>
+    </array>
+</resources>
