@@ -1,0 +1,1 @@
+A University Project. In this app user is able to ask for a pdf with his personal informations, apply e-signature and receive it in his email. He is also able to chat with a stuff users. Stuff is able to edit any information from any user and help users through live chat.
